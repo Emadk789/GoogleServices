@@ -16,6 +16,7 @@
 		696240CD24C927DE00CAD3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696240CC24C927DE00CAD3F1 /* Assets.xcassets */; };
 		696240D024C927DE00CAD3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696240CE24C927DE00CAD3F1 /* LaunchScreen.storyboard */; };
 		696240D824C92BC800CAD3F1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 696240D724C92BC800CAD3F1 /* Podfile */; };
+		696240DA24CB20A700CAD3F1 /* MapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696240D924CB20A700CAD3F1 /* MapStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		696240CF24C927DE00CAD3F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		696240D124C927DE00CAD3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696240D724C92BC800CAD3F1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		696240D924CB20A700CAD3F1 /* MapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyle.swift; sourceTree = "<group>"; };
 		A0435DA47D2810C0FE59195E /* Pods-GoogleServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleServices.debug.xcconfig"; path = "Target Support Files/Pods-GoogleServices/Pods-GoogleServices.debug.xcconfig"; sourceTree = "<group>"; };
 		B03A75BBB3D3A77CA58DEE22 /* libPods-GoogleServices.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleServices.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5492577C82B1F3A0D61DA9 /* Pods-GoogleServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleServices.release.xcconfig"; path = "Target Support Files/Pods-GoogleServices/Pods-GoogleServices.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				696240CE24C927DE00CAD3F1 /* LaunchScreen.storyboard */,
 				696240D124C927DE00CAD3F1 /* Info.plist */,
 				696240C924C927D600CAD3F1 /* GoogleServices.xcdatamodeld */,
+				696240D924CB20A700CAD3F1 /* MapStyle.swift */,
 			);
 			path = GoogleServices;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				696240C524C927D600CAD3F1 /* ViewController.swift in Sources */,
 				696240C124C927D500CAD3F1 /* AppDelegate.swift in Sources */,
 				696240C324C927D600CAD3F1 /* SceneDelegate.swift in Sources */,
+				696240DA24CB20A700CAD3F1 /* MapStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
