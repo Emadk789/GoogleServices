@@ -18,9 +18,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
       return .lightContent
     }
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configerMap()
+    }
+    
+    fileprivate func configerMap() {
         let camera = GMSCameraPosition.camera(withLatitude: 21.3891, longitude: 39.8579, zoom: 6.0)
         let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
         mapView.delegate = self;
@@ -31,15 +37,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         marker.position = CLLocationCoordinate2D(latitude: 21.3891, longitude: 39.8579)
         marker.title = "Makkah"
         marker.snippet = "SA"
-//        marker.icon = UIImage(named: "icons8-street-view-50");
         marker.map = mapView
         
         mapView.mapStyle = try! GMSMapStyle(jsonString: MapStyle.kMapStyle);
-        
-        
-//        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
-        
-        
         
         locationManager = CLLocationManager()
         locationManager?.delegate = self
@@ -56,15 +56,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         self.view = mapView
     }
     
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedAlways {
-            if CLLocationManager.isMonitoringAvailable(for: CLBeaconRegion.self) {
-                if CLLocationManager.isRangingAvailable() {
-                    // do stuff
-                }
-            }
-        }
-    }
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
       print("You tapped at \(coordinate.latitude), \(coordinate.longitude)")
     }
