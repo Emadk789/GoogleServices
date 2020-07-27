@@ -10,12 +10,14 @@ import UIKit
 import CoreData
 import GoogleMaps;
 import GooglePlaces;
+//import googleSign
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 //    AIzaSyDztdHzApqyn5K1cmLJTnLW0BNvN6w39fY
+//    Client 29001001549-ts2a9b1qcl1utab9ge8lcmod9o4p78va.apps.googleusercontent.com
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyDztdHzApqyn5K1cmLJTnLW0BNvN6w39fY");
