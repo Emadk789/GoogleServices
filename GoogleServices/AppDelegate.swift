@@ -11,10 +11,11 @@ import CoreData
 import GoogleMaps;
 import GooglePlaces;
 import GoogleSignIn;
-//import GoogleAPIClientForREST;
+//import GTMSessionFetcher;
+import GoogleAPIClientForREST;
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, GIDSignInUIDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
         print("\(error.localizedDescription)")
@@ -37,6 +38,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
               // [END_EXCLUDE]
 //              print("\(error.localizedDescription)")
             }
+    }
+    
+    private func setupGoogleSignIn() {
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().scopes = [kGTLRAuthScopeDrive]
+        GIDSignIn.sharedInstance()?.signInSilently()
     }
     
 

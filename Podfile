@@ -10,7 +10,7 @@ platform :ios, '8.0'
 target 'GoogleServices' do
     pod 'GoogleMaps'
     pod 'GooglePlaces'
-    pod 'GoogleAPIClientForREST/Sheets', '~> 1.2.1'
+    pod 'GoogleAPIClientForREST/Drive', '~> 1.2.1'
     pod 'GoogleSignIn', '~> 4.1.1'
     pod 'GTMAppAuth'
 end
