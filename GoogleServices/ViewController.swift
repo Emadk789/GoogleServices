@@ -9,8 +9,19 @@
 import UIKit;
 import GoogleMaps;
 import CoreLocation;
+import GoogleSignIn;
+//import GoogleAPIClientForREST;
+//import GoogleAPIClient
+//import google
 
 class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        print("Emad");
+    }
+    
+    @IBOutlet weak var signInButton: GIDSignInButton!
+    
+    
     
     var locationManager: CLLocationManager?
     
@@ -23,8 +34,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configerMap()
+//        GIDSignIn.sharedInstance().presentingViewController = self;
+//        GIDSignIn.sharedInstance().
+        
+        GIDSignIn.sharedInstance().uiDelegate = self
+//        GIDSignIn.sharedInstance()?.delegate = self;
+//        GIDSignIn.sharedInstance()?.uiDelegate = self;
+        
+//        GIDSignIn.sharedInstance()?.scopes = [kGTLRAuthScopeDrive];
+        
+//        configerMap()
     }
+    
     
     fileprivate func configerMap() {
         let camera = GMSCameraPosition.camera(withLatitude: 21.3891, longitude: 39.8579, zoom: 6.0)
@@ -61,5 +82,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     }
     
     
+}
+
+extension ViewController: GIDSignInUIDelegate {
+    
+    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+      withError error: NSError!) {
+        if (error == nil) {
+          // Perform any operations on signed in user here.
+          // ...
+        } else {
+          print("\(error.localizedDescription)")
+        }
+    }
 }
 

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		689290D9B67AD64ADD7C8799 /* libPods-GoogleServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B03A75BBB3D3A77CA58DEE22 /* libPods-GoogleServices.a */; };
 		696240C124C927D500CAD3F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696240C024C927D500CAD3F1 /* AppDelegate.swift */; };
 		696240C324C927D600CAD3F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696240C224C927D600CAD3F1 /* SceneDelegate.swift */; };
 		696240C524C927D600CAD3F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696240C424C927D600CAD3F1 /* ViewController.swift */; };
@@ -17,9 +16,12 @@
 		696240D024C927DE00CAD3F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696240CE24C927DE00CAD3F1 /* LaunchScreen.storyboard */; };
 		696240D824C92BC800CAD3F1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 696240D724C92BC800CAD3F1 /* Podfile */; };
 		696240DA24CB20A700CAD3F1 /* MapStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696240D924CB20A700CAD3F1 /* MapStyle.swift */; };
+		ACDBD3215D0BA2B371D92846 /* libPods-GoogleServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86506E6DA61FEFC1583BF6C5 /* libPods-GoogleServices.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1434D3D68C673FA1EE8F3286 /* Pods-GoogleServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleServices.debug.xcconfig"; path = "Target Support Files/Pods-GoogleServices/Pods-GoogleServices.debug.xcconfig"; sourceTree = "<group>"; };
+		19C72267E41E6B51EF9C1975 /* Pods-GoogleServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleServices.release.xcconfig"; path = "Target Support Files/Pods-GoogleServices/Pods-GoogleServices.release.xcconfig"; sourceTree = "<group>"; };
 		696240BD24C927D500CAD3F1 /* GoogleServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		696240C024C927D500CAD3F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		696240C224C927D600CAD3F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,9 +33,7 @@
 		696240D124C927DE00CAD3F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		696240D724C92BC800CAD3F1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		696240D924CB20A700CAD3F1 /* MapStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyle.swift; sourceTree = "<group>"; };
-		A0435DA47D2810C0FE59195E /* Pods-GoogleServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleServices.debug.xcconfig"; path = "Target Support Files/Pods-GoogleServices/Pods-GoogleServices.debug.xcconfig"; sourceTree = "<group>"; };
-		B03A75BBB3D3A77CA58DEE22 /* libPods-GoogleServices.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleServices.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE5492577C82B1F3A0D61DA9 /* Pods-GoogleServices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleServices.release.xcconfig"; path = "Target Support Files/Pods-GoogleServices/Pods-GoogleServices.release.xcconfig"; sourceTree = "<group>"; };
+		86506E6DA61FEFC1583BF6C5 /* libPods-GoogleServices.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleServices.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,13 +41,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				689290D9B67AD64ADD7C8799 /* libPods-GoogleServices.a in Frameworks */,
+				ACDBD3215D0BA2B371D92846 /* libPods-GoogleServices.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6065F0200A184625CC3B105B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86506E6DA61FEFC1583BF6C5 /* libPods-GoogleServices.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		696240B424C927D500CAD3F1 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +63,7 @@
 				696240BF24C927D500CAD3F1 /* GoogleServices */,
 				696240BE24C927D500CAD3F1 /* Products */,
 				86EEF64D603023FBFF57FE56 /* Pods */,
-				D0EB2FDB9DF84E6F25EACCD1 /* Frameworks */,
+				6065F0200A184625CC3B105B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,18 +94,10 @@
 		86EEF64D603023FBFF57FE56 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A0435DA47D2810C0FE59195E /* Pods-GoogleServices.debug.xcconfig */,
-				CE5492577C82B1F3A0D61DA9 /* Pods-GoogleServices.release.xcconfig */,
+				1434D3D68C673FA1EE8F3286 /* Pods-GoogleServices.debug.xcconfig */,
+				19C72267E41E6B51EF9C1975 /* Pods-GoogleServices.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		D0EB2FDB9DF84E6F25EACCD1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B03A75BBB3D3A77CA58DEE22 /* libPods-GoogleServices.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,11 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 696240D424C927DE00CAD3F1 /* Build configuration list for PBXNativeTarget "GoogleServices" */;
 			buildPhases = (
-				D69DFDCCF0F74FE9362F9B56 /* [CP] Check Pods Manifest.lock */,
+				9BB6DDDF9E644FE1C66D7ADB /* [CP] Check Pods Manifest.lock */,
 				696240B924C927D500CAD3F1 /* Sources */,
 				696240BA24C927D500CAD3F1 /* Frameworks */,
 				696240BB24C927D500CAD3F1 /* Resources */,
-				BBD8466AE2C5E6E6E067C63B /* [CP] Copy Pods Resources */,
+				A0D2A9CB263A7B825A66A8B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,24 +170,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BBD8466AE2C5E6E6E067C63B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleServices/Pods-GoogleServices-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GoogleServices/Pods-GoogleServices-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleServices/Pods-GoogleServices-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D69DFDCCF0F74FE9362F9B56 /* [CP] Check Pods Manifest.lock */ = {
+		9BB6DDDF9E644FE1C66D7ADB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,6 +190,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D2A9CB263A7B825A66A8B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleServices/Pods-GoogleServices-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleServices/Pods-GoogleServices-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleServices/Pods-GoogleServices-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -362,35 +362,44 @@
 		};
 		696240D524C927DE00CAD3F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0435DA47D2810C0FE59195E /* Pods-GoogleServices.debug.xcconfig */;
+			baseConfigurationReference = 1434D3D68C673FA1EE8F3286 /* Pods-GoogleServices.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQ363JP6R5;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = GoogleServices/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emadalbarnawi.GoogleServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};
 		696240D624C927DE00CAD3F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE5492577C82B1F3A0D61DA9 /* Pods-GoogleServices.release.xcconfig */;
+			baseConfigurationReference = 19C72267E41E6B51EF9C1975 /* Pods-GoogleServices.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQ363JP6R5;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = GoogleServices/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emadalbarnawi.GoogleServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
